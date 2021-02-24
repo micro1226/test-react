@@ -1,5 +1,5 @@
 import React from 'react'
-// import JSXBaseDemo from './JSXBaseDemo'
+import JSXBaseDemo from './JSXBaseDemo'
 
 class BaseUseDemo extends React.Component {
     constructor(props) {
@@ -8,8 +8,7 @@ class BaseUseDemo extends React.Component {
 
     render() {
         return <div>
-            {/* <JSXBaseDemo /> */}
-            123
+            <JSXBaseDemo />
         </div>
     }
 }
