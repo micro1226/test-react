@@ -1,5 +1,8 @@
 import React from 'react'
 import JSXBaseDemo from './JSXBaseDemo'
+import FormDemo from './FormDemo';
+import PropsDemo from './PropsDemo'
+import StateDemo from './StateDemo'
 
 class BaseUseDemo extends React.Component {
     // constructor(props) {
@@ -8,7 +11,10 @@ class BaseUseDemo extends React.Component {
 
     render() {
         return <div>
-            <JSXBaseDemo />
+            {/* <JSXBaseDemo /> */}
+            {/* <FormDemo /> */}
+            {/* <PropsDemo /> */}
+            <StateDemo />
         </div>
     }
 }
