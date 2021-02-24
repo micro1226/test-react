@@ -2,9 +2,9 @@ import React from 'react'
 import JSXBaseDemo from './JSXBaseDemo'
 
 class BaseUseDemo extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     render() {
         return <div>

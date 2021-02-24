@@ -1,6 +1,6 @@
 import React from 'react'
 // import './Style.css'
-import List from '../List'
+// import List from '../List'
 
 class JSXBaseDemo extends React.Component {
     constructor(props) {
@@ -51,12 +51,12 @@ class JSXBaseDemo extends React.Component {
         return rawHtmlElem
 
         // 加载组件
-        const componentElem = <div>
-            <p>JSX 中加载一个组件</p>
-            <hr />
-            <List />
-        </div>
-        return componentElem
+        // const componentElem = <div>
+        //     <p>JSX 中加载一个组件</p>
+        //     <hr />
+        //     <List />
+        // </div>
+        // return componentElem
     }
 }
 
