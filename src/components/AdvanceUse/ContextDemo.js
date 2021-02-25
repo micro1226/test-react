@@ -1,11 +1,11 @@
 import React from 'react'
 
 // 创建 context,填入默认值(任何一个 js 变量)
-const ThemeContext = React.createContext('light')
+const ThemeContext = React.createContext('dark')
 
 // 底层组件 - 函数式组件
 function ThemeLink(props) {
-    const theme = this.context // 会报错,函数式组件没有实例, 即没有 this
+    // const theme = this.context // 会报错,函数式组件没有实例, 即没有 this
 
     // 函数式组件可以使用 consumer
     return <ThemeContext.Consumer>
@@ -48,12 +48,13 @@ class ContextDemo extends React.Component {
             <ThemeContext.Provider value={this.state.theme}>
                 <Toolbar />
                 <hr />
+                <p>{this.state.theme}</p>
                 <button onClick={this.changeTheme}>change theme</button>
             </ThemeContext.Provider>
         )
     }
 
-    changTheme = () => {
+    changeTheme = () => {
         this.setState({
             theme: this.state.theme === 'light' ? 'dark' : 'light'
         })
