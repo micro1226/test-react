@@ -1,5 +1,5 @@
 import React from 'react'
-// import UncontrolDemo from './UncontrolDemo'
+import UncontrolDemo from './UncontrolDemo'
 // import PortalsDemo from './PortalsDemo'
 // import ContextDemo from './ContextDemo'
 // import LazyDemo from './LazyDemo'
@@ -7,7 +7,7 @@ import React from 'react'
 // import SCUDemo2 from './SCUDemo2'
 // import PureComponentDemo from './PureComponentDemo'
 // import HocDemo from './HocDemo'
-import RenderPropsDemo from './RenderPropsDemo'
+// import RenderPropsDemo from './RenderPropsDemo'
 
 class AdvanceDemo extends React.Component {
     // constructor(props) {
@@ -16,7 +16,7 @@ class AdvanceDemo extends React.Component {
 
     render() {
         return <div>
-            {/* <UncontrolDemo /> */}
+            <UncontrolDemo />
             {/* <PortalsDemo >Modal 内容</PortalsDemo> */}
             {/* <ContextDemo /> */}
             {/* <LazyDemo /> */}
@@ -24,7 +24,7 @@ class AdvanceDemo extends React.Component {
             {/* <SCUDemo2 /> */}
             {/* <PureComponentDemo /> */}
             {/* <HocDemo a='100' /> */}
-            <RenderPropsDemo a='200' />
+            {/* <RenderPropsDemo a='200' /> */}
         </div>
     }
 }

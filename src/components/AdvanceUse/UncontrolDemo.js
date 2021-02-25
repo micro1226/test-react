@@ -5,10 +5,26 @@ class UncontrolDemo extends React.Component {
         super(props)
         this.state = {
             name: 'momo',
-            flag: true
+            flag: true,
+            count: 0
         }
         this.nameInputRef = React.createRef() //创建 ref
         this.fileInputRef = React.createRef()
+    }
+
+    componentDidMount() {
+        this.setState({ count: this.state.count + 1})
+        console.log('count1: ', this.state.count)
+        this.setState({ count: this.state.count + 1})
+        console.log('count2: ', this.state.count)
+        setTimeout(() => {
+            this.setState({ count: this.state.count + 1})
+            console.log('count3: ', this.state.count)
+        }, 0);
+        setTimeout(() => {
+            this.setState({ count: this.state.count + 1})
+            console.log('count4: ', this.state.count)
+        }, 0);
     }
 
     render() {
