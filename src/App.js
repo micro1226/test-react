@@ -2,11 +2,13 @@
 import './App.css';
 import React from "react";
 import BaseUse from "./components/baseUse";
+import AdvanceUse from './components/AdvanceUse'
 
 function App() {
   return (
     <div>
-      <BaseUse />
+      {/* <BaseUse /> */}
+      <AdvanceUse />
     </div>
     // <div className="App">
     //   <header className="App-header">
