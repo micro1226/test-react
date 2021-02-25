@@ -1,11 +1,11 @@
 import React from 'react'
-import JSXBaseDemo from './JSXBaseDemo'
-import FormDemo from './FormDemo';
-import PropsDemo from './PropsDemo'
-import StateDemo from './StateDemo'
-import ConditionDemo from './ConditionDemo'
-import ListDemo from './ListDemo'
-import EventDemo from './EventDemo'
+// import JSXBaseDemo from './JSXBaseDemo'
+// import FormDemo from './FormDemo';
+// import PropsDemo from './PropsDemo'
+// import StateDemo from './StateDemo'
+// import ConditionDemo from './ConditionDemo'
+// import ListDemo from './ListDemo'
+// import EventDemo from './EventDemo'
 
 class BaseUseDemo extends React.Component {
     // constructor(props) {
@@ -17,7 +17,7 @@ class BaseUseDemo extends React.Component {
             {/* <JSXBaseDemo /> */}
             {/* <FormDemo /> */}
             {/* <PropsDemo /> */}
-            <StateDemo />
+            {/* <StateDemo /> */}
             {/* <ConditionDemo /> */}
             {/* <ListDemo /> */}
             {/* <EventDemo /> */}
