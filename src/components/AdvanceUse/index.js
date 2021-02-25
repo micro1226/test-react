@@ -6,6 +6,7 @@ import LazyDemo from './LazyDemo'
 import SCUDemo from './SCUDemo'
 import SCUDemo2 from './SCUDemo2'
 import PureComponentDemo from './PureComponentDemo'
+import HocDemo from './HocDemo'
 
 class AdvanceDemo extends React.Component {
     // constructor(props) {
@@ -20,7 +21,8 @@ class AdvanceDemo extends React.Component {
             {/* <LazyDemo /> */}
             {/* <SCUDemo /> */}
             {/* <SCUDemo2 /> */}
-            <PureComponentDemo />
+            {/* <PureComponentDemo /> */}
+            <HocDemo a='100' />
         </div>
     }
 }
