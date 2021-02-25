@@ -5,6 +5,7 @@ import ContextDemo from './ContextDemo'
 import LazyDemo from './LazyDemo'
 import SCUDemo from './SCUDemo'
 import SCUDemo2 from './SCUDemo2'
+import PureComponentDemo from './PureComponentDemo'
 
 class AdvanceDemo extends React.Component {
     // constructor(props) {
@@ -18,7 +19,8 @@ class AdvanceDemo extends React.Component {
             {/* <ContextDemo /> */}
             {/* <LazyDemo /> */}
             {/* <SCUDemo /> */}
-            <SCUDemo2 />
+            {/* <SCUDemo2 /> */}
+            <PureComponentDemo />
         </div>
     }
 }
