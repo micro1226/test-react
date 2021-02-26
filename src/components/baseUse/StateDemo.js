@@ -39,28 +39,51 @@ class StateDemo extends React.Component {
         // clearTimeout
     }
 
+    // // 同步 setState场景
+    // increase = () => {
+    //     // 开始: 处于 batchUpdate
+    //     // isBatchingUpdate = true
+    //     this.setState({
+    //         count: this.state.count + 1
+    //     })
+    //     // 结束, isBatchingUpdate = false
+    // }
+    // // 异步 setState 场景
+    // increase = () => {
+    //     // 开始: 处于 batchUpdate
+    //     // isBatchingUpdate = true
+    //     setTimeout(() => {
+    //         // 此时 isBatchingUpdate = false
+    //         this.setState({
+    //             count: this.state.count + 1
+    //         })
+    //         console.log('count in setTimeOut', this.state.count)
+    //     }, 1000)
+    //     // 结束, isBatchingUpdate = false
+    // }
+
     increase = () => {
         // 2.不要直接修改 state, 使用不可变数据
         // this.state.count++ // 错误
         // this.setState({ count: this.state.count + 1 });
 
         // 3.setState可能是异步更新(也有可能是同步更新)
-        // this.setState({
-        //     count: this.state.count + 1
-        // }, () => {
-        //     // vue  $nextTick
-        //     console.log('count by call back', this.state.count)
-        // })
-        // console.log('count', this.state.count)
-        // //  异步的 拿不到最新值
+        this.setState({
+            count: this.state.count + 1
+        }, () => {
+            // vue  $nextTick
+            console.log('count by call back', this.state.count)
+        })
+        console.log('count', this.state.count)
+        //  异步的 拿不到最新值
 
         // setTimeout 中setState是同步的
-        // setTimeout(() => {
-        //     this.setState({
-        //         count: this.state.count + 1
-        //     })
-        //     console.log('count in setTimeOut', this.state.count)
-        // }, 1000)
+        setTimeout(() => {
+            this.setState({
+                count: this.state.count + 1
+            })
+            console.log('count in setTimeOut', this.state.count)
+        }, 1000)
 
         // 自己定义的 DOM事件, setState 是同步的.在 componentDidMount中
 
